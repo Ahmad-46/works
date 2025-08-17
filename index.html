@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clerk Replica</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #111;
+      background: #f9f9f9;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    /* Navbar */
+    header {
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 60px;
+    }
+    .nav-links a {
+      margin-right: 1.5rem;
+      font-weight: bold;
+    }
+    .nav-actions a {
+      margin-left: 1rem;
+      padding: 0.5rem 1rem;
+      border: 2px solid #111;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    .nav-actions .primary {
+      background: #111;
+      color: #fff;
+    }
+
+    /* Hero */
+    .hero {
+      text-align: center;
+      padding: 4rem 1rem;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      color: #555;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .hero .buttons a {
+      margin: 0 0.5rem;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 4px;
+    }
+    .hero .buttons .primary {
+      background: #111;
+      color: #fff;
+    }
+    .hero .buttons .secondary {
+      border: 2px solid #111;
+      color: #111;
+      background: transparent;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <div class="container navbar">
+      <div class="logo"><strong>Clerk</strong></div>
+      <nav class="nav-links">
+        <a href="#">Product</a>
+        <a href="#">Solutions</a>
+        <a href="#">Docs</a>
+        <a href="#">Pricing</a>
+        <a href="#">Company</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="#">Sign in</a>
+        <a href="#" class="primary">Start building</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main class="container">
+    <section class="hero">
+      <h1>More than authentication, Complete User Management</h1>
+      <p>
+        Need more than sign-in? Clerk gives you full stack auth and user 
+        management — so you can launch faster, scale easier, and 
+        stay focused on building.
+      </p>
+      <div class="buttons">
+        <a href="#" class="primary">Start building for free</a>
+        <a href="#" class="secondary">Watch demo (2 min)</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
