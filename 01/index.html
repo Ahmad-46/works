@@ -175,5 +175,64 @@
       </div>
     </div>
   </div>
+
+  <script>
+    // Revenue (Bar Chart)
+    new Chart(document.getElementById('revenueChart'), {
+      type: 'bar',
+      data: {
+        labels: ["01", "02", "03", "04", "05", "06"],
+        datasets: [{
+          label: "Last 6 days",
+          data: [400, 600, 700, 500, 800, 650],
+          backgroundColor: "#4a5fc1"
+        },
+        {
+          label: "Last Week",
+          data: [300, 500, 600, 400, 700, 550],
+          backgroundColor: "#d3d3d3"
+        }]
+      },
+      options: { responsive: true, plugins: { legend: { position: 'bottom' } } }
+    });
+
+    // Order Time (Doughnut Chart)
+    new Chart(document.getElementById('orderTimeChart'), {
+      type: 'doughnut',
+      data: {
+        labels: ["Afternoon", "Evening", "Morning"],
+        datasets: [{
+          data: [40, 32, 28],
+          backgroundColor: ["#4a5fc1", "#7b6cf6", "#d3d3d3"]
+        }]
+      },
+      options: { responsive: true, plugins: { legend: { position: 'bottom' } } }
+    });
+
+    // Orders (Line Chart)
+    new Chart(document.getElementById('orderChart'), {
+      type: 'line',
+      data: {
+        labels: ["01", "02", "03", "04", "05", "06"],
+        datasets: [{
+          label: "Last 6 days",
+          data: [300, 450, 400, 600, 700, 500],
+          borderColor: "#4a5fc1",
+          backgroundColor: "#4a5fc1",
+          fill: false,
+          tension: 0.4
+        },
+        {
+          label: "Last Week",
+          data: [250, 400, 350, 550, 650, 450],
+          borderColor: "#d3d3d3",
+          backgroundColor: "#d3d3d3",
+          fill: false,
+          tension: 0.4
+        }]
+      },
+      options: { responsive: true, plugins: { legend: { position: 'bottom' } } }
+    });
+  </script>
 </body>
 </html>
