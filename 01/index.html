@@ -1,7 +1,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Dashboard</title>
+  <title>Dashboard with Graphs</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <style>
     body {
       margin: 0;
@@ -109,6 +110,10 @@
       padding: 8px 0;
       border-bottom: 1px solid #eee;
     }
+    canvas {
+      width: 100% !important;
+      height: 180px !important;
+    }
   </style>
 </head>
 <body>
@@ -141,12 +146,11 @@
         <h3>Revenue</h3>
         <h2 style="color:#28a745;">IDR 7.852.000</h2>
         <p style="color:green;">↑ 2.1% vs last week</p>
+        <canvas id="revenueChart"></canvas>
       </div>
       <div class="card">
         <h3>Order Time</h3>
-        <p>Afternoon: 40%</p>
-        <p>Evening: 32%</p>
-        <p>Morning: 28%</p>
+        <canvas id="orderTimeChart"></canvas>
       </div>
     </div>
 
@@ -172,6 +176,7 @@
         <h3>Order</h3>
         <h2 style="color:#dc3545;">2.568</h2>
         <p style="color:red;">↓ 2.1% vs last week</p>
+        <canvas id="orderChart"></canvas>
       </div>
     </div>
   </div>
